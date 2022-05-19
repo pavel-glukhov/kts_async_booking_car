@@ -239,6 +239,7 @@ PipelineContext(
 <h2>chain_book_car</h2>
 Аналогично звену **chain_combine_service_offers** нужно поднять воркеров для обработки данных из очереди.
 Получаем данные из очереди:
+
 ```python
 PipelineContext(
     user_id = 1,
@@ -250,7 +251,9 @@ PipelineContext(
        {"url": "http://source/car?id=5", "price": 10_000, "brand": "PORSCHE"},
     ]
 )
+```
 
+```python
 PipelineContext(
     user_id = 1,
     data = [
